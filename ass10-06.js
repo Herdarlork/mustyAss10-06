@@ -30,13 +30,16 @@ if(confirmUrl){
 }
 
 
-// //4.
-// let pandWord = prompt("please insert your word")
-// let pandiWord = pandWord.replace(pandWord, '').toLowerCase()
-// let reversedWord = pandiWord.reverse().join('')
-// let result = pandiWord === reversedWord
-// console.log(result)
-
+//4.
+let pandWord = prompt("please insert your word").trim()
+let pandiWord = pandWord.toLowerCase()
+let reversedWord = pandiWord.split('').reverse().join('')
+let result = pandiWord === reversedWord
+if(result){
+    console.log("it is a palindrome word")
+}else{
+    console.log("it is not a palindrome word")
+}
 
 
 //5.
